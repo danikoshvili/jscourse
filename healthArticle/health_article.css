@@ -1,0 +1,85 @@
+/* General page styling */
+body {
+    font-family: 'Papyrus', cursive; /* Default to a "weird" font */
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #000; /* Black background for contrast */
+    color: #0ff; /* Neon cyan text color */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Extra quirky font */
+    font-size: 36px;
+    color: #ff0; /* Bright yellow */
+    text-shadow: 2px 2px 8px #f0f, 0 0 10px #0ff;
+    margin-bottom: 20px;
+}
+
+/* Articles container */
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual article styling */
+.article {
+    background-color: #222; /* Dark grey card background */
+    border: 3px dashed #f0f; /* Neon pink dashed border */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(255, 0, 255, 0.5);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+    transform: rotate(-3deg) scale(1.05); /* Slight tilt and zoom */
+    box-shadow: 0 6px 15px rgba(255, 255, 0, 0.8);
+}
+
+/* Article title */
+.article h2 {
+    font-family: 'Impact', fantasy; /* Bold and unconventional font */
+    font-size: 24px;
+    color: #ff0;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #0ff; /* Dotted neon cyan border */
+    padding-bottom: 5px;
+    text-transform: uppercase; /* All caps for titles */
+    text-shadow: 1px 1px 5px #f0f;
+}
+
+/* Section headers inside articles */
+.article h3 {
+    font-family: 'Courier New', monospace; /* Retro font style */
+    font-size: 18px;
+    color: #0ff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px #ff0;
+}
+
+/* Article description */
+.article p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff; /* White text for clarity */
+    font-family: 'Brush Script MT', cursive; /* Fancy script font */
+}
+
+/* Lists inside articles */
+.article ul {
+    list-style: square; /* Square bullets */
+    margin: 10px 0 0 20px;
+    padding: 0;
+    color: #0ff;
+}
+
+.article ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-shadow: 0 0 3px #f0f;
+}
